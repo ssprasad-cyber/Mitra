@@ -1,15 +1,5 @@
-import { log } from 'console';
-import express from 'express';
+import app from './app.js';
 
-const app = express();
-
-app.use(express.json());
-
-app.delete("/user/:id",(req, res , next) => {
-  console.log(req.params.id);
-  return res.send("hello");
-});
-
+// connections and listeners
 
 app.listen(5000, () => console.log("Server open"));
-

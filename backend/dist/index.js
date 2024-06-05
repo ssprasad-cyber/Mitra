@@ -1,9 +1,4 @@
-import express from 'express';
-const app = express();
-app.use(express.json());
-app.delete("/user/:id", (req, res, next) => {
-    console.log(req.params.id);
-    return res.send("hello");
-});
+import app from './app.js';
+// connections and listeners
 app.listen(5000, () => console.log("Server open"));
 //# sourceMappingURL=index.js.map
